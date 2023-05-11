@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FBV</title>
+</head>
+<body>
+    <a href="/fbv/">새로고침</a>
+    <form action="" method="GET">
+        <input type="text", name="var">
+        <input type="submit", value="get 제출">
+    </form>
+
+    <form action="" method="POST">{% csrf_token %}
+        <input type="text", name="var">
+        <input type="submit", value="post 제출">
+    </form>
+</body>
+</html>
